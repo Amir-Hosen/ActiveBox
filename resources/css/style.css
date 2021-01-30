@@ -1,0 +1,390 @@
+/*==========================================
+Template Name: Practis- ACTIVE BOX Template.
+Template URI:
+Description: An Awesome Practis Template.
+Author: Amir Hosen
+Author URI:
+Suport: ahosen7@gmail.com
+Version: 1.0
+==========================================*/
+
+/*==========================================
+    CSS INDEX
+    =========
+1. COMMON CSS
+2. HEADER SECTION
+3. WORK SECTION
+4. WORK SEMPLE SECTION
+5. TEAM SECTION
+6. TEASTIMONIAL SECTION
+7. DOWNLOAD SECTION
+8. CONTACT SECTIONL
+9. FOOTER
+==========================================*/
+
+/*==========================================1. COMMON CSS==========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body {
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    color: #6c7279;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/*==REUSEABLE COMPONENTE*/
+.row {
+    max-width: 1170px;
+    margin: auto;
+}
+.top-header {
+    background: rgba(255, 255, 255, 0.0);
+    height: 120px;
+    border-bottom: 1px solid #505268;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+section {
+    padding: 45px;
+}
+/*==========================================2. HEADER SECTION==========================================*/
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.81)), url(bg-img/bg3.jpg) no-repeat center / cover;
+    height: 750px;
+    padding-bottom: 100px;
+}
+.logo {
+    float: left;
+    height: 45px;
+    width: 200px;
+    margin-top: 45px;
+}
+.main-nav {
+    float: right;
+    margin-top: 60px;
+
+}
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-transform: uppercase;
+    background: rgba(230, 71, 68, 0.4);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 13px;
+    text-align: right;
+    margin-left: 5px;
+    font-weight: 700;
+}
+.main-nav li a ion-icon {
+    font-size: 18px;
+    border: 1px solid #fff;
+    padding-top: 2px;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.hero-text-box {
+    width: auto;
+    margin: auto;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-text-box span {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.btn-hero {
+    display: inline-block;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: #e84545;
+    padding: 15px 60px;
+    border-radius: 5px;
+    margin-top: 70px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn-hero:hover {
+    color: #e84545;
+    border: 2px solid rgba(232, 69, 69, 0.6);
+    background: rgba(255, 255, 255, 0.66);
+}
+/*==========================================3.WORK SECTION==========================================*/
+#work {
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)), url(bg-img/bg2.jpg) no-repeat center / cover fixed;
+    height: 690px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px 50px;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px 50px;
+    text-align: center;
+}
+.grid-container-item img {
+    width: 55px;
+}.grid-container-item:nth-child(3) img {
+    width: 40px;
+    height: 45px;
+}
+
+.grid-container-item h2 {
+    color: #2d3033;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.grid-container-item span {
+    width: auto;
+    text-align: justify;
+    font-size: 14px;
+    display: block;
+    color: #6c7279;
+    word-spacing: -0.3px;
+}
+/*==========================================4. WORK SEMPLE SECTION==========================================*/
+#work-semple {
+    background: #fff;
+    padding: 0;
+}
+.grid-work-semple-container {
+    display: grid;
+    grid-template-columns: (4 1fr);
+}
+.grid-work-semple-item img {
+    width: 290px;
+    height: 250px;
+}
+/*==========================================5. TEAM SECTION==========================================*/
+#team {
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)), url(bg-img/bg5.jpg) no-repeat center / cover fixed;
+    height: 780px;
+}
+.grid-team-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px;
+    text-align: center;
+}
+.grid-team-item img {
+    border-radius: 50%;
+}
+.grid-team-item .social-icon i {
+    font-size: 25px;
+    border: 1px solid #6c7279;
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: 1s;
+    padding: 10px;
+    margin-left: 10px;
+    background: rgba(0, 0, 0, 0.65);
+}
+.grid-team-item .social-icon a i {
+    color: #600051;
+}
+.grid-team-item .social-icon i:hover {
+    color: aqua;
+    transform: rotate(360deg);
+}
+
+.grid-team-item h3 {
+    color: #2d3033;
+    font-size: 26px;
+    margin: 10px 0;
+}
+.grid-team-item h4 {
+    color: #e84545;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.grid-team-item p {
+    color: #6c7279;
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+}
+/*==========================================6. TEASTIMONIAL SECTION ==========================================*/
+#testimonial {
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)), url(bg-img/bg7.jpg) no-repeat center / cover fixed;
+    height: 500px;
+    padding: 0;
+}
+.grid-testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-testimonial-item {
+    position: relative;
+}
+.grid-testimonial-item img {
+    height: 500px;
+    width: 585px;
+}
+.grid-testimonial-item p {
+    font-family: 'Cardo', serif;
+    font-weight: 400 italic;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.grid-testimonial-item span {
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+}
+.grid-testimonial-item:nth-child(2) {
+    background: #53354a;
+    height: 500px;
+}
+.description {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+/*==========================================7. DOWNLOAD SECTION==========================================*/
+#download {
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)), url(bg-img/bg9.jpg) no-repeat top / cover fixed;
+    height: 350px;
+    text-align: center;
+    position: relative;
+}
+.container {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.container h3 {
+    font-size: 28px;
+    font-weight: 200;
+    color: #2d3033;
+}
+.container p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d3033;
+}
+.container button {
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: #e84545;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.container button:hover {
+    border: 2px solid #e84545;
+    background: rgba(255, 255, 255, 0.7);
+    color: #e84545;
+}
+/*==========================================8. CONTACT SECTIONL==========================================*/
+#contact {
+    background: #3a3e64;
+    height: 250px;
+    position: relative;
+}
+.grid-contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    margin: auto;
+    top: 42%;
+    left: 15%;
+    text-align: center;
+}
+.grid-contact-item h5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.grid-contact-item p {
+    color: #fff;
+    font-size: 14px;
+}
+.grid-contact-item .social-icon i {
+    font-size: 25px;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    transition: 1s;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: #3a3e64;
+    padding: 10px;
+}
+.grid-contact-item .social-icon a i {
+    color: #fff;
+}
+.grid-contact-item .social-icon i:hover {
+    color: aqua;
+    transform: rotate(360deg);
+}
+/*==========================================9. FOOTER==========================================*/
+footer {
+    background: #313454;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+.item {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #808080;
+    font-size: 14px;
+}
+.item strong {
+    color: #fff;
+}
+.item i {
+  color: #c91660;
+  margin: 0 5px;
+}
+.item strong:hover {
+  color: #c91660;
+}
